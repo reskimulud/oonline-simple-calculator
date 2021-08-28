@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+
+        <title>Hello, world!</title>
+    </head>
+    <body>
+        
+
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div class="board">
+                    <!-- bar hasil perhitungan -->
+                    <div class="bg-primary rounded">
+                        <div class="text-end py-4 px-4">
+                            <h3 id="result">0</h3>
+                        </div>
+                    </div>
+
+                    <!-- tombol-tombol -->
+                    <div class="d-flex flex-wrap">
+                        <div class="p-1 key">
+                            <button id="ac-btn" class="btn btn-secondary">
+                                AC
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="ce-btn" class="btn btn-secondary">
+                                CE
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="div-btn" class="btn btn-secondary">
+                                /
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="multi-btn" class="btn btn-secondary">
+                                x
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="seven-btn" onclick="onKeyClick(7)" class="btn btn-secondary">
+                                7
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="eight-btn" onclick="onKeyClick(8)" class="btn btn-secondary">
+                                8
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="nine-btn" onclick="onKeyClick(9)" class="btn btn-secondary">
+                                9
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="sub-btn" class="btn btn-secondary">
+                                -
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="four-btn" onclick="onKeyClick(4)" class="btn btn-secondary">
+                                4
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="five-btn" onclick="onKeyClick(5)" class="btn btn-secondary">
+                                5
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="six-btn" onclick="onKeyClick(6)" class="btn btn-secondary">
+                                6
+                            </button>
+                        </div>
+                        <div class="p-1 key">
+                            <button id="sum-btn" class="btn btn-secondary">
+                                +
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="row">
+                                    <div class="key p-1">
+                                        <button id="one-btn" onclick="onKeyClick(1)" class="btn btn-secondary key">
+                                            1
+                                        </button>
+                                    </div>
+                                    <div class="key p-1">
+                                        <button id="two-btn" onclick="onKeyClick(2)" class="btn btn-secondary key">
+                                            2
+                                        </button>
+                                    </div>
+                                    <div class="key p-1">
+                                        <button id="three-btn" onclick="onKeyClick(3)" class="btn btn-secondary key">
+                                            3
+                                        </button>
+                                    </div>
+                                    <div class="ent p-1">
+                                        <button id="equal-btn" class="btn btn-warning key">
+                                            =
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="row zero-dot">
+                                    <div class="key0 p-1">
+                                        <button id="zero-btn" onclick="onKeyClick(0)" class="btn btn-secondary key">
+                                            0
+                                        </button>
+                                    </div>
+                                    <div class="key p-1">
+                                        <button id="dot-btn" class="btn btn-secondary key">
+                                            .
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+        -->
+    </body>
+</html>
